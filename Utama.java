@@ -17,13 +17,15 @@ public class Utama {
     public static void main(String[] args) {
         // TODO code application logic here
         Pakaian gamis = new Pakaian();
-        System.out.println("Aku adalah "+gamis.getJenisPakaian()+ " Aku berwarna " +gamis.getWarna()+ " Aku adalah merupakan " +gamis.getNama()+ "sehari-sehari" + " Aku merupakan " +gamis.getPemakaian());
+        System.out.println("Aku adalah "+gamis.getJenisPakaian()+ " yang berwarna " 
+                +gamis.getWarna()+ ". Aku merupakan " +gamis.getNama()+ "loh" + " sehari-sehari." 
+                        + " Aku juga bisa dipakai di " +gamis.getPemakaian());
         gamis.rayon();
         
         System.out.println("");
         
         Aksesoris cincin = new Aksesoris();
-        System.out.println("Aku adalah "+cincin.getNama()+ " Aku berwarna "+cincin.getWarna());
+        System.out.println("Aku adalah "+cincin.getNama()+ " Aku memiliki warna "+cincin.getWarna());
         System.out.println("");
         
         Fashion kemeja = (Fashion) gamis;

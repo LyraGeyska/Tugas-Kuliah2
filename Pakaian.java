@@ -16,20 +16,20 @@ public class Pakaian extends Fashion implements Baju {
 
     @Override
     public void katun() {
-        System.out.println("Bahan katun terbuat dari serat kapas");
+        System.out.println("Aku berbahan katun yang terbuat dari serat kapas");
     }
 
     @Override
     public void polyester() {
-        System.out.println("Bahan polyester terbuat dari serat sintetis");
+        System.out.println("Aku berbahan polyester yang terbuat dari serat sintetis");
     }
 
     @Override
     public void rayon() {
-        System.out.println("Bahan rayon terbuat dari pengolahan ampas kayu");
+        System.out.println("Aku berbahan rayon yang terbuat dari pengolahan ampas kayu");
     }
-    
-    public Pakaian(){
+
+    public Pakaian() {
         System.out.println("Pakaian merupakan bagian dari Fashion.");
         this.setJenisPakaian("Gamis");
         this.setWarna("Hitam");

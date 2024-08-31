@@ -16,7 +16,7 @@ public class Aksesoris extends Fashion {
 
     public Aksesoris(){
         System.out.println("Aksesoris merupakan bagian yang cukup penting pagi perempuan.");
-        this.setWarna("Gold");
+        this.setWarna("Emas");
         this.setUkuran(12);
         super.setNama("Cincin");
         super.setPemakaian("Pemakaian di Jari");
