@@ -9,18 +9,23 @@ package Tugas2;
  *
  * @author HP
  */
-public class Aksesoris extends Fashion {
+public class Aksesoris extends Fashion implements Gelang, Anting {
 
     private String warna;
-    private int ukuran;
 
-    public Aksesoris(){
-        System.out.println("Aksesoris merupakan bagian yang cukup penting pagi perempuan.");
-        this.setWarna("Emas");
-        this.setUkuran(12);
-        super.setNama("Cincin");
-        super.setPemakaian("Pemakaian di Jari");
+    public void judul() {
+        System.out.println("Aku hadir untuk membantu mempercantik penampilanmu");
     }
+
+    public Aksesoris() {
+        super.setNama("Bangle");
+        super.setPemakaian("Pemakaian di Kaki");
+        super.judul();
+        this.judul();
+        this.setWarna("Gold");
+
+    }
+
     /**
      * @return the warna
      */
@@ -35,18 +40,29 @@ public class Aksesoris extends Fashion {
         this.warna = warna;
     }
 
-    /**
-     * @return the ukuran
-     */
-    public int getUkuran() {
-        return ukuran;
+    @Override
+    public void Emas() {
+        System.out.println("Aku terbuat dari emas");
     }
 
-    /**
-     * @param ukuran the ukuran to set
-     */
-    public void setUkuran(int ukuran) {
-        this.ukuran = ukuran;
+    @Override
+    public void Titanium() {
+        System.out.println("Aku terbuat dari titanium");
+    }
+
+    @Override
+    public void bulat() {
+        System.out.println("Aku berbentuk bulat tanpa hiasan gantung");
+    }
+
+    @Override
+    public void panjang() {
+        System.out.println("Aku memiliki bentuk yang panjang dan memiliki hiasan gantung");
+    }
+
+    @Override
+    public void tusuk() {
+        System.out.println("Aku memiliki bentuk yang simple dengan penutup diujung");
     }
 
 }

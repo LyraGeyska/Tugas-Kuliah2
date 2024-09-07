@@ -9,14 +9,19 @@ package Tugas2;
  *
  * @author HP
  */
-public class Fashion {
+public class Fashion{
 
     private String nama;
     private String pemakaian;
 
-    public Fashion() {
+    public void judul() {
+        System.out.println("Kesempurnaan bisa dimulai dengan memperhatikan penampilanmu");
+    }
+
+    public void Fashion() {
         System.out.println("Haloo aku bagian dari fashion loh");
     }
+
 
     /**
      * @return the pemakaian

@@ -9,10 +9,22 @@ package Tugas2;
  *
  * @author HP
  */
-public class Pakaian extends Fashion implements Baju {
+public class Pakaian extends Fashion implements Baju, Celana {
 
-    private String jenisPakaian;
     private String warna;
+
+    public void judul() {
+        System.out.println("Aku hadir untuk membantu gaya busanamu");
+    }
+
+    public Pakaian() {
+        super.judul();
+        this.judul();
+        this.setNama("Gamis");
+        this.setWarna("Hitam");
+        this.setPemakaian("Acara Formal");
+
+    }
 
     @Override
     public void katun() {
@@ -29,26 +41,14 @@ public class Pakaian extends Fashion implements Baju {
         System.out.println("Aku berbahan rayon yang terbuat dari pengolahan ampas kayu");
     }
 
-    public Pakaian() {
-        System.out.println("Pakaian merupakan bagian dari Fashion.");
-        this.setJenisPakaian("Gamis");
-        this.setWarna("Hitam");
-        super.setNama("Baju");
-        super.setPemakaian("Acara Formal");
+    @Override
+    public void Panjang() {
+        System.out.println("Aku bisa dipadu padankan dengan celana panjang");
     }
 
-    /**
-     * @return the jenisPakaian
-     */
-    public String getJenisPakaian() {
-        return jenisPakaian;
-    }
-
-    /**
-     * @param jenisPakaian the jenisPakaian to set
-     */
-    public void setJenisPakaian(String jenisPakaian) {
-        this.jenisPakaian = jenisPakaian;
+    @Override
+    public void Pendek() {
+        System.out.println("Aku bisa dipadu padankan dengan celana pendek");
     }
 
     /**
@@ -64,4 +64,5 @@ public class Pakaian extends Fashion implements Baju {
     public void setWarna(String warna) {
         this.warna = warna;
     }
+
 }
